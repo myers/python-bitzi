@@ -1,0 +1,53 @@
+python-bitzi
+
+This is a straight python to c binding for bitzi's bitcollider.
+
+To build:
+
+	python setup.py build_ext -I <bitcollider include directory>
+	
+To install:
+
+	python setup.py install
+
+Next check out the "examples" directory to see some examples of using the
+module.
+
+If you use this in your project I would love to hear from you via email.
+
+
+Rules for accessing the Bitzi site for bulk interactions (from
+http://bitzi.com/bboard/message?message_id=187713&forum_id=4076#188140):
+
+  (1) Identify your requests with a user-agent and version wherever possible,
+  so that if your software does go haywire or overtaxes our service, we can
+  contact you and adapt.
+
+  (2) Only perform hits when they will clearly add displayed value to the
+  user. A hit when a user consciously requests it (via a click or menupick) is
+  always OK, dozens or hundreds of hits when they haven't requested such info
+  are not. (If you want to do mass background lookups, please contact us so we
+  can work out a way to enable it with minimal disruption.)
+
+  (3) Respect HTTP error codes (like 503-server busy) and the 'retry-after'
+  header for requesting a 'time-out' between requests. 
+
+  (4) Include attribution to Bitzi when using/displaying Bitzi data, with a
+  clickable link whenever possible.
+
+AND
+
+  (1) Only one request at a time
+
+  (2) Pause between requests. A nice pause time would be the greater of either
+  2 seconds or however long the last request took. (Then, if the server is
+  bogging down and your requests are taking many seconds, you'd wait many
+  seconds before trying again.)
+
+  (3) If you get back any 5xx errors, slow down. Respect any 'retry-after'
+  header that comes back asking for a delay before you retry.
+
+  (4) If you just need to scrape it once, and doesn't matter to you the time
+  of day, try to do it during our slow hours -- 12am to 5am pacific time. 
+
+ - Myers "icepick" Carpenter <icepick@icepick.info>

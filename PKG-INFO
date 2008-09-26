@@ -1,0 +1,29 @@
+Metadata-Version: 1.0
+Name: python-bitzi
+Version: 0.2
+Summary: Metadata extraction using the Bitzi libraries
+Home-page: http://icepick.info/projects/python-bitzi/
+Author: Myers W. Carpenter
+Author-email: icepick@icepick.info
+License: Public Domain
+Download-URL: http://icepick.info/projects/python-bitzi/
+Description: python-bitzi is a wrapper around the Bitcollider library from Bitzi.  It
+        allows you to extract metadata from different types of files.  Using this
+        library you can get the bitprint (tiger tree + sha1), md5, song length, song
+        bit rate, image dimensions.
+        
+        You can think of Bitzi as the "card catalog" for the heavenly jukebox,
+        holding information about any and every media file that is ever reported to
+        them, not just the files available on the web, or through any particular
+        service, or through any particular sharing/distribution network.
+        
+        Developers of file sharing networks should find this extension useful.
+        
+Platform: win32 posix
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Classifier: Topic :: Communications :: File Sharing
