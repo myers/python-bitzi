@@ -1,11 +1,7 @@
 python-bitzi
 
-This is a straight python to c binding for bitzi's bitcollider.
+This is a straight python to c binding for bitzi's bitcollider using ctypes.
 
-To build:
-
-	python setup.py build_ext -I <bitcollider include directory>
-	
 To install:
 
 	python setup.py install
